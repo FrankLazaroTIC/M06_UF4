@@ -7,12 +7,10 @@ function App() {
   const [numClicks, setNumClicks] = useState(0);
 
   const incrementNum = () => {
-    console.log('Incrementant el número');
     setNumClicks(numClicks + 1);
   };
 
   const reiniciarNum = () => {
-    console.log('Reiniciant el número');
     setNumClicks(0);
   };
 
