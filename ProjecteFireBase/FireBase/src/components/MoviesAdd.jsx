@@ -52,15 +52,15 @@ function AddMovie() {
 
   return (
     //El formulari amb els camps per afegir una pel·lícula
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" required />
-      <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Description" required />
-      <input type="number" value={duration} onChange={(e) => setDuration(e.target.value)} placeholder="Duration" required />
-      <input type="text" value={image} onChange={(e) => setImage(e.target.value)} placeholder="Image URL" required />
-      <input type="number" value={rate} onChange={(e) => setRate(e.target.value)} placeholder="Rate" required />
-      <input type="number" value={year} onChange={(e) => setYear(e.target.value)} placeholder="Year" required />
-      <button type="submit">Add Movie</button>
-    </form>
+    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', maxWidth: '300px', margin: '0 auto' }}>
+    <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" required style={{ margin: '10px 0', padding: '10px' }} />
+    <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Description" required style={{ margin: '10px 0', padding: '10px' }} />
+    <input type="number" value={duration} onChange={(e) => setDuration(e.target.value)} placeholder="Duration" required style={{ margin: '10px 0', padding: '10px' }} />
+    <input type="text" value={image} onChange={(e) => setImage(e.target.value)} placeholder="Image URL" required style={{ margin: '10px 0', padding: '10px' }} />
+    <input type="number" value={rate} onChange={(e) => setRate(e.target.value)} placeholder="Rate" required style={{ margin: '10px 0', padding: '10px' }} />
+    <input type="number" value={year} onChange={(e) => setYear(e.target.value)} placeholder="Year" required style={{ margin: '10px 0', padding: '10px' }} />
+    <button type="submit" style={{ margin: '10px 0', padding: '10px', cursor: 'pointer' }}>Afegir</button>
+  </form>
   );
 }
 
