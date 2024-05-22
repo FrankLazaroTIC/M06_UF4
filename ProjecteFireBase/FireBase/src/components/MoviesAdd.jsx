@@ -63,5 +63,5 @@ function AddMovie() {
   </form>
   );
 }
-
+ 
 export default AddMovie;
